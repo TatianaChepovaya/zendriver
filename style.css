@@ -24,7 +24,7 @@ ul {
 }
 html,
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
