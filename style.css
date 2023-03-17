@@ -220,6 +220,7 @@ img {
 }
 
 .btn__orange-border {
+  font-weight: 700;
   border: 1px solid var(--main-accent-color);
   color: var(--main-accent-color);
 }
@@ -798,6 +799,111 @@ img {
   background-color: var(--main-light-color);
   margin-top: 22px;
   margin-bottom: 0;
+}
+
+.mobile__menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 46px;
+  border-radius: 5px;
+}
+
+.mobile__menu-btn .open {
+  display: none;
+}
+
+.mobile__menu-btn.active {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--main-accent-color);
+}
+
+.mobile__menu-btn.active .open {
+  display: flex;
+}
+
+.mobile__menu-btn.active .close {
+  display: none;
+}
+
+.logo__menu {
+  display: none;
+}
+
+.header__main.active {
+  background-color: var(--main-accent-green-color);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header__main.active .logo__menu {
+  display: block;
+  width: 178px;
+  height: 39px;
+}
+
+.header__main.active .logo {
+  display: none;
+
+}
+
+.header__line.active {
+  background-color: var(--main-accent-color);
+}
+
+.mobile__menu-container {
+  display: none;
+  padding-top: 42px;
+  padding-bottom: 76px;
+}
+
+.mobile__menu-container.active {
+  display: block;
+  background-color: var(--main-accent-green-color);
+}
+
+.menu.active {
+  display: block;
+  margin-bottom: 68px;
+}
+
+.mobile__menu-container.active li {
+  position: relative;
+  width: 200px;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--main-light-color);
+  margin-bottom: 25px;
+}
+
+.mobile__menu-container.active li:last-child {
+  margin-bottom: 0;
+}
+
+.menu li:hover,
+.menu li:focus {
+  font-weight: 600;
+  color: var(--main-accent-color);
+
+}
+
+.mobile__menu-container li:hover::after,
+.mobile__menu-container li:focus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+  display: block;
+  background-image: url(./images/arrowright-orange.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8px;
+  height: 14px;
+
 }
 
 @media screen and (min-width: 416px) {
@@ -1429,6 +1535,7 @@ img {
   }
 
   .footer__title {
+    text-transform: capitalize;
     margin-bottom: 41px;
   }
 
@@ -1460,22 +1567,21 @@ img {
     opacity: 0.4;
   }
 
-
   .footer__main-content input {
     font-size: 18px;
     height: 45px;
   }
-
-
 
   .footer__main-content ::placeholder {
     font-size: 18px;
   }
 
   .footer__main-content .main__btn {
-
     margin-top: 78px;
+  }
 
+  .mobile__menu-btn {
+    display: none;
   }
 }
 
