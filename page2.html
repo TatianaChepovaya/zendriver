@@ -22,7 +22,11 @@
       </div>
       <div class="header__main">
         <div class="container header__main-container">
-          <img class="logo" src="./images/logo.svg" alt="" />
+          <div class="logo__container">
+            <img class="logo" src="./images/logo.svg" alt="" />
+            <img class="logo__menu" src="./images/logo-menu.svg" alt="" />
+          </div>
+
           <nav class="menu">
             <ul>
               <li><a href="">About project </a></li>
@@ -34,33 +38,109 @@
             </ul>
           </nav>
           <ul class="header__btn-list">
-            <li class="btn__green"><a href="">Our app</a></li>
+            <li class="btn__orange"><a href="">Our app</a></li>
             <li class="btn__green-border"><a href="">Contact Us</a></li>
+            <li class="btn__orange-border"><a href="">Download app</a></li>
           </ul>
+          <a class="mobile__menu-btn btn__orange-border">
+            <span class="close">Menu</span>
+            <span class="open"> <img src="./images/close.svg" alt="" /></span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile__menu-container">
+        <div class="container">
+          <div class="footer__main-content">
+            <h3 class="footer__title">Subscribe to the newsletter</h3>
+            <form>
+              <label>
+                <input type="text" placeholder="Enter your name*" />
+              </label>
+              <label>
+                <input type="text" placeholder="Enter your email address*" />
+              </label>
+              <button class="main__btn btn__green-border" type="submit">Submit Now</button>
+            </form>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero__container">
-          <div class="hero__left-part">
-            <span class="title__label">Perfect solutions for your mind &life</span>
+        <div class="container hero__container hero__container-inner">
+          <div class="hero__left-part hero__left-part-inner">
+            <span class="title__label">ZenDiver app</span>
             <h1 class="title">
-              Unlock the power <br />
-              <span class="text__green">from the deep inside</span>
+              Deep transformation? <br />
+              <span class="text__green">As easy as pie!</span>
             </h1>
-            <a class="main__btn btn__green" href="">About app</a>
+            <div class="base__text">
+              <p>Get the assistant for solid self-improvement work on a daily basis.</p>
+            </div>
+            <div class="btn__icon-market">
+              <a href=""><img src="./images/googleplay.svg" alt="" /></a>
+              <a href=""><img src="./images/apple.png" alt="" /></a>
+            </div>
           </div>
-          <div class="hero__right-part">
-            <img src="./images/hero.png" alt="" />
+          <div class="hero__right-part hero__right-part-inner">
+            <img src="./images/hero2.png" alt="" />
           </div>
         </div>
       </section>
-
-      <section class="forwhat">
-        <div class="container forwhat__container">
+      <section class="feature">
+        <div class="container feature__container">
+          <ul>
+            <li>
+              <img src="./images/card1.svg" alt="" />
+              <div class="feature__title">Easy-to-use</div>
+              <div class="base__text">
+                <p>Means all aspects of the tool could be used by everybody.</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/card2.svg" alt="" />
+              <div class="feature__title">Effectiveness</div>
+              <div class="base__text">
+                <p>Means all transformations affected the root cause of the problems, and all changes are stable.</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/card3.svg" alt="" />
+              <div class="feature__title">Safe</div>
+              <div class="base__text">
+                <p>Means even not correctly using all methods with the app is absolutely safe.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="visit">
+        <div class="container visit__container">
+          <div class="visit__left-part">
+            <h2 class="secondary__title">Feel yourself visiting psychotherapist:</h2>
+            <ul>
+              <li>Advanced voice interface to dive deeper into the process</li>
+              <li>All needed education is included</li>
+            </ul>
+            <div class="base__text">
+              <p>
+                This mobile application is like having a personal psychologist at your fingertips, but in the end, it's
+                just you and your mobile phone. With various tools and features, the app helps guide you towards greater
+                self-awareness and personal growth, much like working with a therapist. Whether it's managing anxiety,
+                conquering fears, or improving relationships, the app offers a safe and confidential space for exploring
+                your inner world and achieving your goals.
+              </p>
+            </div>
+          </div>
+          <div class="visit__right-part">
+            <img src="./images/page2-section2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="forwhat forwhat__inner">
+        <div class="container forwhat__container forwhat__container-inner">
           <div class="forwhat__left-part">
-            <img src="./images/page2- section3.png" alt="" />
+            <img src="./images/page2-section3.png" alt="" />
           </div>
           <div class="forwhat__right-part">
             <h2 class="secondary__title">For what? To have an efficient tool that:</h2>
@@ -94,6 +174,98 @@
           </div>
         </div>
         <img class="banner_img-right" src="./images/banner-Frame.svg" alt="" />
+      </section>
+      <section>
+        <div class="container content__container">
+          <h2 class="secondary__title">App contains</h2>
+
+          <div class="content__inner">
+            <div class="content__inner-left-part">
+              <div class="content__title">
+                <img src="./images/diary.svg" alt="" />
+                <p>Diary</p>
+              </div>
+              <ul>
+                <li>Keep a diary of your behavior and emotions that you’d like to change or improve.</li>
+                <li>The ability to track changes and progress over time.</li>
+              </ul>
+              <div class="base__text">
+                <p>
+                  By tracking your patterns and progress over time, you can identify areas where you excel and areas
+                  where you can improve. This helps you stay accountable and motivated to achieve your goals. With the
+                  help of technology, it's now easier than ever to keep a diary and track your progress right from your
+                  mobile device.
+                </p>
+              </div>
+            </div>
+            <div class="content__inner-right-part">
+              <img src="./images/Frame1.png" alt="" />
+              <img src="./images/Frame2.png" alt="" />
+            </div>
+          </div>
+          <div class="content__inner">
+            <div class="content__inner-left-part">
+              <div class="content__title">
+                <img src="./images/diagnosis.svg" alt="" />
+                <p>Diagnosis</p>
+              </div>
+              <ul>
+                <li>
+                  A step-by-step self-psychotherapeutic diagnosis process to understand the root core of undesirable
+                  behaviors and emotions.
+                </li>
+                <li>
+                  Information on how to use the information gained during the diagnosis process to determine the most
+                  appropriate psychotherapeutic transformation process.
+                </li>
+              </ul>
+              <div class="base__text">
+                <p>
+                  A comprehensive self-psychotherapeutic tool that guides you through a step-by-step diagnosis process
+                  to uncover the root cause of negative behaviors and emotions. With this valuable insight, you can
+                  determine the most effective path for personal transformation and growth. Additionally, the app
+                  provides guidance on how to use the information gathered during the diagnosis process to support the
+                  transformation journey and achieve positive change.
+                </p>
+              </div>
+            </div>
+            <div class="content__inner-right-part">
+              <img src="./images/Frame3.png" alt="" />
+              <img src="./images/Frame4.png" alt="" />
+            </div>
+          </div>
+          <div class="content__inner">
+            <div class="content__inner-left-part">
+              <div class="content__title">
+                <img src="./images/Transformation.svg" alt="" />
+                <p>Transformation</p>
+              </div>
+              <ul>
+                <li>
+                  A step-by-step guide to the psychotherapeutic transformation process, tailored to the user's specific
+                  problem and skills.
+                </li>
+                <li>
+                  Using the most powerful and safe psychotherapeutic methods that are possible to use for
+                  self-transformation.
+                </li>
+              </ul>
+              <div class="base__text">
+                <p>
+                  Our app offers a comprehensive and personalized psychotherapeutic transformation process that is
+                  tailored to the user's specific needs and skills. Our step-by-step guide allows users to effectively
+                  navigate through the process, while utilizing the most powerful and safe psychotherapeutic methods for
+                  self-transformation. With our app, users can achieve lasting change and growth towards a happier and
+                  healthier life.
+                </p>
+              </div>
+            </div>
+            <div class="content__inner-right-part">
+              <img src="./images/Frame5.png" alt="" />
+              <img src="./images/Frame6.png" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
       <section>
         <div class="container reviews__container">
@@ -186,6 +358,27 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="banner banner-inner">
+        <div class="container banner__container">
+          <div class="banner__left-part">
+            <img src="./images/banner-light-color.png" alt="" />
+          </div>
+          <div class="banner__right-part">
+            <div class="banner__text">
+              <div class="banner__title">
+                Download <br />
+                our mobile app
+              </div>
+              <div class="banner__label">Free <span class="text__orange">14-Day</span></div>
+            </div>
+            <div class="btn__icon-market">
+              <a href=""><img src="./images/googleplay.svg" alt="" /></a>
+              <a href=""><img src="./images/apple.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <img class="banner_img-right" src="./images/banner-Frame-light-color.svg" alt="" />
       </section>
     </main>
     <footer>
